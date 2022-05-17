@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="referrer" content="no-referrer"/>
+
+  <title>Engxzu</title>
+  <!-- bootstrap 5 css -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/css/bootstrap.min.css" integrity="sha384-DhY6onE6f3zzKbjUPRc2hOzGAdEf4/Dz+WJwBvEYL/lkkIsI3ihufq9hk9K4lVoK" crossorigin="anonymous">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <!-- Boostrap Icon -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+  <!-- logo -->
+  <link rel="shortcut icon" href="../assets/img/brand.png" type="image/png">
+  <!-- custom css -->  
+  <link rel="stylesheet" href="../assets/css/index.css">
+  <link rel="stylesheet" href="../assets/css/login.css">
+
+  <!-- Google Sign In -->
+  <meta name="google-signin-client_id" content="624088565432-jgrefbgpeqeomsqi1vqb6ubq1m8a2sv8.apps.googleusercontent.com">
+
+  <script src="https://apis.google.com/js/platform.js" async defer></script>
+  <script src="../assets/js/login.js" async defer></script>
+  <script src="../assets/js/main.js" async defer></script>
+
+
+  <style>
+    @keyframes hideLoader{0%{ width: 100%; height: 100%; }100%{ width: 0; height: 0; }  }  body > div.loader{ position: fixed; background: white; width: 100%; height: 100%; z-index: 1071; opacity: 0; transition: opacity .5s ease; overflow: hidden; pointer-events: none; display: flex; align-items: center; justify-content: center;}body:not(.loaded) > div.loader{ opacity: 1;}body:not(.loaded){ overflow: hidden;}  body.loaded > div.loader{animation: hideLoader .5s linear .5s forwards;  } /* Typing Animation */.loading-animation {width: 6px;height: 6px;border-radius: 50%;animation: typing 1s linear infinite alternate;position: relative;left: -12px;}@keyframes typing {0% {background-color: rgba(100,100,100, 1);box-shadow: 12px 0px 0px 0px rgba(100,100,100, 0.2),24px 0px 0px 0px rgba(100,100,100, 0.2);}25% {background-color: rgba(100,100,100, 0.4);box-shadow: 12px 0px 0px 0px rgba(100,100,100, 2),24px 0px 0px 0px rgba(100,100,100, 0.2);}75% {background-color: rgba(100,100,100, 0.4);box-shadow: 12px 0px 0px 0px rgba(100,100,100, 0.2),24px 0px 0px 0px rgba(100,100,100, 1);}}
+  </style>
+</head>
+
+<body class="profile_pages">
+  <div class="loader">
+    <div class="loading-animation"></div>
+  </div>
+  <!-- Content -->
+
+  <!-- Navbar Section -->
+  <section id="profile">
+    <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
+      <div class="container">
+        <a class=" btn btn-teal text-light d-flex align-items-center" href="../index.html"><i class="fas fa-arrow-circle-left pr-2"></i> Back</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+
+          <i class="fas fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          
+
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item dropdown">
+              <div class="data-user d-none d-flex align-items-center">
+                <div class="name-user"></div>
+                <a href="#" class="nav-link dropdown-toggle" id="imgDropdown" data-bs-toggle="dropdown" aria-expanded="false"><img class="img-user img-fluid rounded-circle border border-1 border-dark ml-2"  width="35" alt="img"></a>
+                <ul class="dropdown-menu ml-3" aria-labelledby="imgDropdown">
+                  <li><a href="layouts/profile.html" class="nav-link dropdown-item text-white px-2">User Info</a></li>
+                  <li><button class="btn text-white nav-link dropdown-item px-2" href="#" onclick="signOut();"><i class="bi bi-arrow-right-circle pr-1"></i> Sign out</button></li>
+                </ul>
+              </div>
+
+              <a class="nav-link g-signin2 d-flex align-items-center" href="#"  data-onsuccess="onSignIn" aria-expanded="false"></a>
+
+            </li>
+
+          </ul>
+
+        </div>
+      </div>
+    </nav>
+    <!-- Navbar End -->
+
+    <!-- Profile pages -->
+    <div class="jumbotron">
+      <div class="box-info shadow-md text-center mb-2">
+        <h3 class="text-center text-white">User Profile</h3>
+        <p class="no-data text-danger">You have to login first !</p>
+        <div class="data-user text-center">
+          <img class="img-user img-fluid img-profile rounded-circle py-2">
+          <h4 class="name-user text-white py-2"></h4>
+          <div class="user-text d-none py-1">User Engxzu <i class="fas fa-check-circle"></i></div>
+          <div id="email-user" class="d-flex d-none card-bg  mt-3 align-items-center"></div>
+        </div>
+      </div>
+      
+
+    </div>
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://code.iconify.design/2/2.0.4/iconify.min.js"></script>
+  <!-- bootstrap js -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+  crossorigin="anonymous"></script>
+  <!-- Custom JS -->
+</body>
+
+</html> 

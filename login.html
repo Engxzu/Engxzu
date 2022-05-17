@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Form Login</title>
+	<meta name="google-signin-client_id" content="624088565432-jgrefbgpeqeomsqi1vqb6ubq1m8a2sv8.apps.googleusercontent.com">
+
+	<script src="https://apis.google.com/js/platform.js" async defer></script>
+	<script src="assets/js/login.js" async defer></script>
+
+</head>
+<body>
+	<main>
+		<div class="g-signin2" data-onsuccess="onSignIn" data-theme="dark"></div>
+
+		<div class="data">
+			<p>Profile Details</p>
+			<img class="profile-img" width="50" src="" alt="">
+			<h2 class="nama"></h2>
+			<h2 class="email-user"></h2>
+		</div>
+
+		<button href="#" onclick="signOut();">Sign out</button>
+		<!-- 624088565432-bnrqc343hgmjp83hijv4dg1i760khpev.apps.googleusercontent.com -->
+	</main> 
+	
+
+	<!-- {"web":{"client_id":"624088565432-bnrqc343hgmjp83hijv4dg1i760khpev.apps.googleusercontent.com","project_id":"signinapp-337809","auth_uri":"https://accounts.google.com/o/oauth2/auth","token_uri":"https://oauth2.googleapis.com/token","auth_provider_x509_cert_url":"https://www.googleapis.com/oauth2/v1/certs","client_secret":"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","javascript_origins":["http://localhost:3000"]}} -->
+
+
+	<!-- https://console.cloud.google.com/apis/credentials?project=signinapp-337809&supportedpurview=project -->
+</body>
+</html>

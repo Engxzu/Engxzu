@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="referrer" content="no-referrer"/>
+
+  <title>engXzu - Make Easier to Learn English  </title>
+  <!-- bootstrap 5 css -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/css/bootstrap.min.css" integrity="sha384-DhY6onE6f3zzKbjUPRc2hOzGAdEf4/Dz+WJwBvEYL/lkkIsI3ihufq9hk9K4lVoK" crossorigin="anonymous">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <!-- Boostrap Icon -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+  <!-- logo -->
+  <link rel="shortcut icon" href="assets/img/brand.png" type="image/png">
+  <!-- custom css -->  
+  <link rel="stylesheet" href="assets/css/index.css">
+  <link rel="stylesheet" href="assets/css/login.css">
+
+  <!-- Google Sign In -->
+  <meta name="google-signin-client_id" content="624088565432-jgrefbgpeqeomsqi1vqb6ubq1m8a2sv8.apps.googleusercontent.com">
+
+  <script src="https://apis.google.com/js/platform.js" async defer></script>
+  <script src="assets/js/login.js" async defer></script>
+
+  <style>
+    @keyframes hideLoader{0%{ width: 100%; height: 100%; }100%{ width: 0; height: 0; }  }  body > div.loader{ position: fixed; background: white; width: 100%; height: 100%; z-index: 1071; opacity: 0; transition: opacity .5s ease; overflow: hidden; pointer-events: none; display: flex; align-items: center; justify-content: center;}body:not(.loaded) > div.loader{ opacity: 1;}body:not(.loaded){ overflow: hidden;}  body.loaded > div.loader{animation: hideLoader .5s linear .5s forwards;  } /* Typing Animation */.loading-animation {width: 6px;height: 6px;border-radius: 50%;animation: typing 1s linear infinite alternate;position: relative;left: -12px;}@keyframes typing {0% {background-color: rgba(100,100,100, 1);box-shadow: 12px 0px 0px 0px rgba(100,100,100, 0.2),24px 0px 0px 0px rgba(100,100,100, 0.2);}25% {background-color: rgba(100,100,100, 0.4);box-shadow: 12px 0px 0px 0px rgba(100,100,100, 2),24px 0px 0px 0px rgba(100,100,100, 0.2);}75% {background-color: rgba(100,100,100, 0.4);box-shadow: 12px 0px 0px 0px rgba(100,100,100, 0.2),24px 0px 0px 0px rgba(100,100,100, 1);}}
+  </style>
+</head>
+
+<body>
+  <div class="loader">
+    <div class="loading-animation"></div>
+  </div>
+  <!-- Content -->
+
+  <!-- Navbar Section -->
+  <section id="home_pages">
+    <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
+      <div class="container">
+        <a class="navbar-brand" href="index.html"><img src="assets/img/brand.png" width="40" alt="brand-logo">&nbsp; EngXzu</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="fas fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="tenses.html">Docs</a>
+            </li> 
+            <li class="nav-item">
+              <a class="nav-link" href="#about_us">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#Features">Features</a>
+            </li>
+          </ul>
+
+          <ul class="navbar-nav">
+            <li class="nav-item dropdown">
+              <div class="data-user d-none d-flex align-items-center">
+                <div class="name-user"></div>
+                <a href="#" class="nav-link dropdown-toggle" id="imgDropdown" data-bs-toggle="dropdown" aria-expanded="false"><img class="img-user img-fluid rounded-circle border border-1 border-dark ml-2"  width="35" alt="img"></a>
+                <ul class="dropdown-menu ml-3" aria-labelledby="imgDropdown">
+                  <li><a href="layouts/profile.html" class="nav-link dropdown-item text-white px-2">User Info</a></li>
+                  <li><button class="btn text-white nav-link dropdown-item px-2" href="#" onclick="signOut();"><i class="bi bi-arrow-right-circle pr-1"></i> Sign out</button></li>
+                </ul>
+              </div>
+
+              <a class="nav-link g-signin2 d-flex align-items-center" href="#"  data-onsuccess="onSignIn" aria-expanded="false"></a>
+
+            </li>
+
+          </ul>
+
+        </div>
+      </div>
+    </nav>
+    <!-- Navbar End -->
+
+    <!-- Jumbotron -->
+    <div class="jumbotron">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-7 text">
+            <h1 class="display-4">Learn English grammar online <span>Quickly</span> and <span>Easily</span></h1>
+            <p class="lead"><span>Engxzu</span> is a community formed by 2 people, who developing our ideas to create a website that is useful for everyone, and the <span>EngXzu</span> website is especially for us</p>
+            <a class="btn btn-teal text-light btn-lg" href="tenses.html">Get started</a>
+          </div>
+          <div class="col-md-5 ">
+            <img src="assets/img/rocket.png" class="img-fluid img-roket" width="350" alt="ilustrasi roket">
+          </div>
+        </div>
+      </div>
+
+
+      <!-- circle -->
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col">
+            <img src="assets/img/circle_1.png" class="img-fluid circle"  alt="circle_1">
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <!-- Jumbtron End -->
+  </section>
+
+  <!-- Our Features Special For U -->
+
+  <section id="Features">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <h2 class="line-teal title text-center">Our Features Special For You</h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-3 col-md-6 d-flex justify-content-center">
+          <div class="card-features bg-white ">
+            <div class="card-icon">
+              <img src="assets/img/icon_online.png" width="32" alt="icon online">
+            </div>
+            <div class="card-text">
+              <h3 >Online 
+                <br>
+              Education</h3>
+              <p >Competently morph resource sucking ideas without accurate innovation</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 d-flex justify-content-center">
+          <div class="card-features bg-white">
+            <div class="card-icon">
+              <img src="assets/img/book.png" width="32" alt="icon online">
+            </div>
+            <div class="card-text">
+              <h3 >Effective 
+                <br>
+              Methodes</h3>
+              <p >We made the material as simple but understandable</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 d-flex justify-content-center">
+          <div class="card-features bg-white">
+            <div class="card-icon">
+              <img src="assets/img/task.png" width="32" alt="icon task complete">
+            </div>
+            <div class="card-text ">
+              <h3 >Complete
+                <br>
+               Docs</h3>
+              <p >We have complete and clear documentation and easy to understand</p>
+            </div>
+          </div>
+        </div>
+
+        
+        <div class="col-lg-3 col-md-6 d-flex justify-content-center">
+          <div class="card-features bg-white">
+            <div class="card-icon">
+              <img src="assets/img/touch.png" width="32" alt="icon online">
+            </div>
+            <div class="card-text">
+              <h3 >Easy 
+                <br>
+              Access</h3>
+              <p >You can access the application anywhere and anytime</p>
+            </div>
+          </div>
+        </div>
+
+
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Our Features Special For U end-->
+
+  <!-- Landing Page -->
+  <section id="Landing_Page">
+    <div class="container">
+      <div class="row d-flex justify-content-center">
+
+        <div class="col-lg-6">
+          <img src="assets/img/card.png" class="img-fluid" width="475" alt="card" >
+        </div>
+
+        <div class="col-lg-6">
+          <h2>Grow your <span>English</span> skill to <span>Advance</span></h2>
+          <p>With Engxzu, we can develop English to level up one by one, Engxzu provides complete material with grammar. The material that we made is complete with important things that are used in everyday.</p>
+          <a href="tenses.html" class="btn btn-teal text-light btn-lg">Demo</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <!-- Landing Page End -->
+
+  <!-- Meet Our Team -->
+  <section id="Team">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <h2 class="line-teal title text-center">Meet Our Team</h2>
+        </div>
+      </div>
+      <div class="row d-flex justify-content-center mt-5">
+        <div class="col-lg-6">
+          <div class="card-team bg-white profile"> 
+            <div class="team_img">
+              <img src="assets/img/elvina-avatar.png" alt="" class="avatar">
+            </div>
+            <p class="about">I’m Elvina Firmansyah, I’m 13 Y.O And I’m From Indonesia. I'm Interested To Be A UI/UX Designer. I'm Learning JavaScript And Web Design Now !!!!</p>
+
+            <div class="bottom-content">
+              <div class="line-team"></div>
+
+              <div class="card-passion d-flex justify-content-between align-items-center">
+                <div class="name">
+                  <h5 class="text-dark">Elvina Firmansyah</h5>
+                  <p>UI/UX Designer</p>
+                </div>
+                <a href="https://github.com/elvinafirmansyah" class="btn text-decoration-none" target="_blank"><i class="fab fa-github fa-2x text-dark"></i></a>
+              </div>  
+            </div>
+            
+          </div>
+        </div>
+
+        <div class="col-lg-6">
+          <div class="card-team bg-white profile"> 
+            <div class="team_img">
+              <img src="assets/img/elvira-avatar.png" alt="" class="avatar">
+            </div>
+            <p class="about">Hi, I'm Elvira Firmansyah. I am a person who is interested in web design and website development. I am passionate about building a career in website design & development, to which I would bring dedication, enthusiasm and creativity.</p>
+            <div class="line-team"></div>
+            <div class="card-passion d-flex justify-content-between align-items-center">
+              <div class="name">
+                <h5 class="text-dark">Elvira Firmansyah</h5>
+                <p>Web Developer</p>
+              </div>
+              <a href="https://github.com/elvirafimansyah" class="btn text-decoration-none" target="_blank"><i class="fab fa-github fa-2x text-dark"></i></a>
+            </div>
+            
+          </div>
+        </div>
+        
+      </div>
+    </div>
+  </section>
+  <!-- Meet Our Team End -->
+  
+  <!-- About Us -->
+  <section id="about_us">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <h2 class="line-teal title text-center">About Us</h2>
+        </div>
+      </div>
+      <div class="row justify-content-center ">
+        <div class="col">
+          <div class="card-about">
+            <p><span>Engxzu</span> is an online learning application that provides a place to learn English, which will help students for solving problems in learning English. 
+            <br>
+            <br>
+            With the <span>Engxzu</span> application, it will be easier for you to understand a variety of subject matter and can be accessed anytime and anywhere. </p>  
+
+            <!-- Modal  -->
+            <button type="button" class="btn btn-teal text-light" data-bs-toggle="modal" data-bs-target="#modal_about">Read More</button>
+
+            <div class="modal fade" id="modal_about" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+              <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalToggleLabel">About Engxzu</h5>
+                    <button type="button" class="btn btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    Engxzu is an English learning platform from Indonesia owned by Ladies Of Twins. Founded in 2021 by <a href="https://elvinaf.xyz/" target="_blank" class="text-decoration-none">Elvina Firmansyah </a> with her twin sister, <a href="https://elvira.elvinaf.xyz/" target="_blank" class="text-decoration-none">Elvira Firmansyah</a>
+
+                    <br></br>
+                    Engxzu is an online learning application that provides a place to learn English, which will help students for solving problems in learning English.
+                    <br><br>
+                    With the Engxzu application, it will be easier for you to understand a variety of subject matter and can be accessed anytime and anywhere.
+                    <br><br>
+                    The Engxzu builds connections, understanding and trust between people in the world through arts and culture, education and the English language. 
+                    <br><br>
+
+                    We help young people to gain the skills, confidence and connections they are looking for to realise their potential and to participate in strong and inclusive communities. We support them to learn English, to get a high-quality education and to gain internationally recognised qualifications.
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-teal text-light" data-bs-dismiss="modal">Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+            <!-- Modal End -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- About Us End -->
+
+
+  <!-- Subscribe -->
+  <section id="Subscribe">
+    <div class="container">
+      <div class="row text-center">
+        <h2>Subscribe to get <span>Information</span>, latest <span>News</span> and <br> other intersting offers about <span>Coblam</span></h2>
+        <h5>A new platform for a new generation of recuoiters <br> Join our waitlist to get early access!!</h5>
+      </div>
+      <div class="row" >
+        <div class="col">
+          
+          <form name="engxzu-subsribe">
+            <div class="input-group input-subsribe my-5">
+              <input class="form-control" id="inputemail" placeholder="example@gmail.com or gmail username" aria-label="example@gmail.com" aria-describedby="basic-addon2" name="email">
+              <button type="submit" class="input-group-btn btn-send btn btn-teal text-light" id="btn-submit basic-addon2">Subscribe</button>
+            </div>
+            
+          </form>
+
+          <div class="row justify-content-center d-flex">
+            <div class="col d-flex justify-content-center" id="show-alert">
+
+
+              <div class="alert alert-dismissible fade show pop-alert d-none" role="alert">
+                Thank You! <strong class="title-alert text-dark"></strong> We have received your message.
+                <button type="button" class="btn btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+              </div>
+
+            </div>
+          </div>
+        
+
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Subscribe End -->
+
+  
+  <!-- Contact Us -->
+  <section id="contact">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 column-1">
+          <h2 class="line-contact">Get in touch !</h2>
+          <p>A new platform for a new generation of recruoiters.</p>
+
+          <div class="contact-spesific d-flex align-items-center">
+            <img src="assets/img/mail.png" class="img-fluid" width="35" alt="mail_icon">
+            <div class="contact-text ">
+              <h4>Mail</h4>
+              <p>engxzu@gmail.com</p>
+            </div>
+          </div>
+
+          <div class="contact-spesific d-flex align-items-center">
+            <img src="assets/img/telp.png" class="img-fluid" width="35" alt="telp_icon">
+            <div class="contact-text ">
+              <h4>Phone</h4>  
+              <p>+62 0896-XXXX-XXXX</p>
+            </div>
+          </div>
+
+          <div class="contact-spesific d-flex align-items-center">
+            <img src="assets/img/address.png" class="img-fluid" width="35" height="25" alt="maps_icon">
+            <div class="contact-text mt-3">
+              <h4>Location</h4>
+              <p>Palembang, Indonesia</p>
+            </div>
+          </div>
+
+        </div>
+        <div class="col-lg-6 column-2">
+          <form name='contact-engxzu'>
+              <div class="alert alert-dismissible fade show my-alert d-none rounded-3 p-4" role="alert">
+                <strong>Thank You!</strong> We have received your message.
+                <button type="button" class="btn btn-close" style="font-size: 15px;" data-bs-dismiss="alert" aria-label="Close"></button>
+              </div>
+              <div class="mb-3">
+                  <label for="name" class="form-label">Your Name</label>
+                  <input type="text" class="form-control" placeholder="Full Name" id="name" aria-describedby="name" name="nama">
+              </div>
+              <div class="mb-3">
+                  <label for="email" class="form-label">Your Email</label>
+                  <input type="email" class="form-control" placeholder="example@gmail.com" id="email" aria-describedby="email" name="email">
+              </div>
+              <div class="mb-3">
+                <label for="exampleFormControlTextarea1" class="form-label">Messages</label>
+                <textarea class="form-control" id="pesan" placeholder="Type your messages" rows="3" name="pesan"></textarea>
+              </div>
+              <button type="submit" class="btn text-light btn-teal btn-kirim send ">Send</button>
+
+              <button class="btn-load text-light btn-loading d-none p-2 border-0" type="button" disabled>
+                  <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+                  Loading...
+              </button>
+          </form>
+        </div>
+
+      </div>
+    </div>
+    <a href="#home_pages" class="link-js top d-none btn" ><i class="fas fa-arrow-circle-up"></i></a>
+
+  </section>
+
+  <!-- Contact Us End -->
+
+  <!-- Footer -->
+  <footer id="Footer">
+    <div class="container">
+      <div class="row">
+
+        <div class="col-lg-3 col-md-6 my-5 text-white footer-content mr-3">
+          <a class="navbar-brand text-white" href="#"><img src="assets/img/brand.png" class="pb-2" width="40" alt="brand-logo">&nbsp; EngXzu</a>
+          <p>Engxzu is an online learning application that provides a place to learn English, which will help students for solving problems in learning English. </p>
+          <!-- Sosial Media -->
+          <div class="sosial-media">
+            <a href="https://www.instagram.com/elvinaelvira.s/" class="btn" target="_blank"><i class="bi bi-instagram"></i></a>
+            <a href="#" class="btn"><i class="bi bi-facebook"></i></a>
+            <a href="https://github.com/Engxzu" class="btn" target="_blank"><i class="bi bi-github"></i></a>
+          </div>
+          <!-- Sosial Media End -->
+        </div>
+
+        <div class="col-lg-2 col-md-6 my-5 text-white footer-content flex-column d-block">
+          <div class="text-about">  
+            <a class="text-white text-decoration-none" href="#"><h3>Company</h3></a>
+            <a href="#about_us" class="text-white text-decoration-none d-block">About Us</a>
+            <a href="#" class="text-white text-decoration-none d-block">Privacy Policy</a>
+            <a href="#" class="text-white text-decoration-none d-block">Contact Us</a>
+            <a href="#" class="text-white text-decoration-none d-block">Terms of Use</a>
+          </div>  
+        </div>
+
+        <div class="col-lg-2 col-md-6 my-5 text-white footer-content flex-column d-block">
+          <div class="text-about">  
+            <a class="text-white text-decoration-none" href="#"><h3>Support</h3></a>
+            <a href="#" class="text-white text-decoration-none d-block">Policy</a>
+            <a href="#" class="text-white text-decoration-none d-block">Contact</a>
+            <a href="#" class="text-white text-decoration-none d-block">SiteMap</a>
+            <a href="#" class="text-white text-decoration-none d-block">24hours Chat</a>
+          </div>  
+        </div>
+
+        <div class="col-lg-2 col-md-6 my-5 text-white footer-content flex-column d-block">
+          <div class="text-about">  
+            <a class="text-white text-decoration-none" href="#"><h3>Contact</h3></a>
+            <a href="#" class="text-white text-decoration-none d-block">Whatapp</a>
+            <a href="#" class="text-white text-decoration-none d-block">Website</a>
+            <a href="#" class="text-white text-decoration-none d-block">Gmail</a>
+            <a href="#" class="text-white text-decoration-none d-block">Support 24</a>
+          </div>  
+        </div>
+
+        <div class="col-lg-2 col-md-6 my-5 text-white footer-content flex-column d-block">
+          <div class="text-about">  
+            <a class="text-white text-decoration-none" href="#"><h3>Get Help</h3></a>
+            <a href="#" class="text-white text-decoration-none d-block">Support Center</a>
+            <a href="#" class="text-white text-decoration-none d-block">Services</a>
+            <a href="#" class="text-white text-decoration-none d-block">Quick Chat</a>
+          </div>  
+        </div>
+  
+
+      </div>
+    </div>
+  </footer>
+  <!-- Footer End -->
+
+  <script type="text/javascript">window.$crisp=[];window.CRISP_WEBSITE_ID="a3526eff-afd6-43b6-a0a2-03d999e89afb";(function(){d=document;s=d.createElement("script");s.src="https://client.crisp.chat/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();</script>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://code.iconify.design/2/2.0.4/iconify.min.js"></script>
+  <script src="assets/js/index.js"></script>
+  <!-- bootstrap js -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+  crossorigin="anonymous"></script>
+  <!-- Custom JS -->
+</body>
+
+</html> 

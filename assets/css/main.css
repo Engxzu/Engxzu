@@ -1,0 +1,413 @@
+    @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Mono:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Viga&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Fira Sans', sans-serif;
+    scrollbar-color: rgb(182, 182, 182) white;
+    scrollbar-width: thin;
+}
+
+
+:root {
+    --darkblue: #018068;
+    --main-color: #018068;
+    --pastelblue: #F2F7FF;
+    --lilac: #f3f0ff;
+    --hovernav: #00b594;
+    --aqua: #3debb7;
+    --white: #018068;
+    --rumus: #ffffff;
+    /*#87E8D6*/
+
+}
+
+
+.dark-theme {
+    --main-color: #1c1c1c;
+    --darkblue: #1c1c1c;
+    --pastelblue: #e8e8e8;
+    --lilac: #5e5d5e;
+    --hovernav: #4f4f4f;
+    --aqua: #ffffff;
+    --white: #1c1c1c;
+    --rumus: #ffffff;
+}
+
+.blue-theme {
+    --main-color: #1f0a69;
+    --darkblue: #1f0a69;
+    --pastelblue: #F2F7FF;
+    --lilac: #f3f0ff;
+    --hovernav: #6339f7;
+    --aqua: #94ebff;
+    --white: #1f0a69;
+    --rumus: #ffffff;
+}
+/* Custom Scroll Bar */
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+  background:  transparent;
+}
+/* Track */
+::-webkit-scrollbar-track {
+    background:  transparent;
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--darkblue); 
+  border-radius: 7px;
+}
+::selection {
+    color: var(--rumus);
+    background-color: var(--darkblue);
+}
+
+/* dark mode btn */
+#icon {
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+}
+
+/* Boostrap */
+.bg-white {
+    background: #fff !important;
+}
+
+.btn-blue {
+    background: #1f0a69 !important;
+}
+.btn-black{
+    background: #4d3f7e;
+}
+body {
+    min-height: 100vh;
+    background-color: var(--pastelblue);
+}
+.btn-teal{
+    background: var(--white);
+    color: var(--rumus);
+}
+
+/*Sidebar*/
+.nav-item a span {
+    margin-right: 20px;
+}
+
+.navbar {
+    width: 250px;
+    height: 100%;
+    position: fixed;
+    margin-left: -300px;
+    background-color: var(--main-color);
+    transition: 0.4s;
+    overflow-y: auto;
+    scrollbar-color: var(--hovernav) white;
+    scrollbar-width: thin;
+}
+/* Track */
+.navbar::-webkit-scrollbar-track {
+    background:  transparent;
+}
+/* Handle */
+.navbar::-webkit-scrollbar-thumb {
+  background: var(--hovernav); 
+  border-radius: 7px;
+  height: 40%;
+}
+.navbar .brand a {
+    color: var(--aqua);
+}
+
+.navbar .brand {
+    font-family: 'Viga', sans-serif;
+    font-size: 26px;
+    list-style: none;
+    padding: 0.9rem 0 1.5rem 0;
+}
+
+.navbar-expand .navbar-nav .nav-link {
+    padding: 0.5rem 1rem 0.4rem 1rem;
+}
+
+.navbar .text-menu {
+    font-size: 18px;
+    text-decoration: none;
+    margin-bottom: 3rem;
+    color: var(--aqua);
+}
+
+.nav-link {
+    font-size: 1.15em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0.3rem 1.2rem;
+}
+.active{
+    background-color: var(--hovernav);
+    border: none;
+    box-shadow: none;
+    border-radius: 5px;
+    color: #fff;
+}
+.nav-link:hover,
+#menu-btn:active,
+.close-btn:active,
+#menu-btn:focus,
+.close-btn:focus,
+#menu-btn:hover,
+.close-btn:hover,
+.list-btn:active,
+.list-btn:hover {
+    background-color: var(--hovernav);
+    border: none;
+    box-shadow: none;
+    border-radius: 5px;
+    color: #fff;
+}
+
+.dropdown-menu {
+    background-color: var(--main-color);
+    padding: 0 1rem 0.5rem 1.5rem;
+    border: none;
+}
+
+.dropdown-item:active,
+.dropdown-item:focus,
+.dropdown-item:hover {
+    background: var(--main-color);
+    transform: translate(4px, 0px);
+    transition: 0.3s;
+}
+
+.navbar-expand .navbar-nav .dropdown-menu {
+    position: static !important;
+}
+
+/*Akhir Sidebar*/
+
+/* Content Section */
+
+/*rumus*/
+.isi-content h3 {
+    color: var(--darkblue);
+}
+
+.isi-content .tense {
+    border-radius: 11px;
+}
+
+.rumus p {
+    font-size: 18px;
+    margin-top: 15px;
+    color: var(--darkblue);
+    margin-bottom: 8px;
+    font-weight: 605;
+}
+
+.rumus h5 {
+    background: var(--rumus) !important;
+    padding: 1rem 1.5rem;
+    width: 94.5%;
+    font-family: 'Red Hat Mono', monospace;
+    font-weight: 520;
+    border-radius: 11px;
+    word-spacing: 1.5rem;
+    color: var(--white);
+    font-size: 20px;
+    font-style: italic;
+}
+
+.misalnya .kata-biasa h5 {
+    background: var(--rumus) !important;
+    padding: 1rem 1.5rem;
+    width: 600px;
+    font-weight: 520;
+    border-radius: 11px;
+    color: var(--white);
+    font-size: 20px;
+}
+
+.rumus .kata-sifat,
+.kata-kerja span {
+    font-size: 15px;
+    margin: 8px 0 15px 0;
+    color: var(--white);
+}
+/* Active & Passive Section */
+.rumus-active{  
+    background-color: var(--white);
+    padding: 1.2rem 0.8rem 0.8rem 0.8rem;
+    border-radius: 8px;
+}
+.rumus-active h6{
+    color: var(--rumus);
+    font-style: italic;
+    font-weight: 400;
+}
+/*contoh kalimat*/
+.contoh-kal p {
+    font-size: 18px;
+    margin-top: 25px;
+    margin-bottom: 8px;
+    font-weight: 605;
+    color: var(--white);
+}
+
+.main-k h6 {
+    font-size: 19.5px;
+}
+
+.main-k .con-1 {
+    padding-right: 10px;
+}
+table{
+    background-color: var(--darkblue);
+    border-radius: 10px;
+    color: var(--rumus) !important;
+    text-transform: capitalize;
+    font-size: 13.15px;
+}
+td, th{
+    border: 1px solid var(--pastelblue);
+}
+.table>:not(caption)>*>*{
+    padding: 1.6rem 0.4rem;
+}
+.arti-tense {
+    color: var(--white);
+}
+
+.arti-tense:hover {
+    color: var(--white);
+}
+
+
+/*present*/
+.contoh-kal .main-k {
+    background: var(--rumus) !important;
+    padding: 1.5rem;
+    margin-left: 0.8rem;
+    margin-bottom: 1rem;
+    width: 600px;
+    border-radius: 8.5px;
+    color: var(--white);
+}
+.main-i{
+    background: var(--rumus) !important;
+    padding: 1.5rem;
+    margin-left: 0.8rem;
+    margin-bottom: 1rem;
+    width: 600px;
+    border-radius: 8.5px;
+    color: var(--white);
+}
+.last {
+    margin-bottom: 1rem;
+}
+
+.my-container {
+    transition: 0.4s;
+}
+
+.active-nav {
+    margin-left: 0;
+}
+
+.active-cont {
+    margin-left: 260px;
+}
+/* Intransitive Verb Section */
+.instra-card{
+    margin-left: 0px !important;
+}
+#menu-btn,
+.close-btn,
+.list-btn {
+    background-color: var(--darkblue);
+    color: #fff;
+}
+
+.list-btn {
+    float: right;
+    margin-left: 1rem;
+}
+
+.hover-link {
+    text-decoration: none;
+}
+
+.hover-link:hover {
+    text-decoration: underline;
+}
+
+.btn-color {
+    border-radius: 50% !important;
+    width: 30px;
+    height: 30px;
+    border: 1px solid var(--white);
+}
+
+.tenses-btn{
+    margin-bottom: 1rem;
+}
+
+/* AKhir Content Section */
+
+/*Kegunaan*/
+.text-blue {
+    color: var(--darkblue);
+}
+
+.text-blue:hover {
+    color: var(--darkblue);
+}
+
+.float {
+    float: right;
+}
+
+hr {
+    border: 1px solid var(--darkblue);
+}
+.btn-success, .btn-blue{
+    margin-bottom: 20px 0;
+}
+/*Blockquote*/
+blockquote {
+    padding: 20px;
+    margin: 0;
+    border-left: 7px solid var(--darkblue);
+    background: white;
+    border-radius: 3px;
+}
+
+/*Akhir Kegunaan*/
+
+
+@media (min-width: 992px) {
+    .main-k {
+        display: flex;
+        background-color: #fff;
+    }
+    .table>:not(caption)>*>*{
+        padding: 1.6rem 0.9rem;
+    }
+    table{
+        font-size: 16px;
+    }
+    .btn-success, .btn-blue{
+        margin-bottom: 20px 0;
+    }
+    .tenses-btn{
+        margin-bottom: 0;
+    }
+}

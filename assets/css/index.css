@@ -1,0 +1,503 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Mono:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Viga&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Fira Sans', sans-serif;
+}
+:root {
+    --darkblue:  #018068;
+    --pastelblue: #F2F7FF;
+    --hovernav: #00b594; 
+    --lightcolor: #EBF5F3;
+    --lightteal:  #87E8D6;
+    --gray: #6C6C6C;
+
+}
+::selection{
+    color: #fff;
+    background-color: var(--darkblue);
+}
+
+/* Custom Scroll Bar */
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+  background:  transparent;
+}
+/* Track */
+::-webkit-scrollbar-track {
+    background:  transparent;
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--darkblue); 
+  border-radius: 7px;
+}
+
+/* Boostrap */
+.bg-white {
+    background: #fff !important;
+}
+.btn-teal {
+    background:  var(--darkblue) !important;
+}
+.alert {
+    background:  var(--lightteal) !important;
+    color:  var(--darkblue);
+}
+
+
+body {
+    min-height: 100vh;
+    overflow:  overlay;
+}
+
+/*Home Pages*/
+#home_pages {
+    background-image: url(../img/home_page.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+/*Navbar*/
+.navbar-brand { 
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight:  600;
+}
+
+.nav-item {
+    padding-right: 20px;
+}
+.active {
+    color:  var(--darkblue) !important;
+}
+.navbar-toggler,
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+    outline: none !important;
+    box-shadow: none !important;
+    border: none;
+}
+/*Jumbotron*/
+.jumbotron {
+    position: relative;
+    margin-top:  3%;
+
+}
+.jumbotron .text {
+    margin-top:  10%;
+}
+
+.jumbotron .circle {
+    position: absolute;
+    bottom:  0;
+    left:  0;
+    width: 100px;
+}
+.display-4 {
+    font-size:  46px;
+    font-weight:  600;
+}
+.display-4 span {
+    color:  var(--darkblue);
+    font-weight: 700;
+}
+.lead {
+    font-size:  19px;
+    color:  #6C6C6C;
+}
+.lead span {
+    color:  var(--hovernav);
+    font-weight: 400;
+}
+
+/*Our Features*/
+#Features{
+    padding: 70px 0;
+    background:  var(--lightcolor);
+
+}
+#Features .title {
+    font-size:  40px;
+    margin-bottom:  52px;
+}
+
+.line-teal::after{
+    content: '';
+    display: block;
+    border-bottom: 5px solid var(--darkblue);
+    width: 5%;
+    padding-bottom: 5px;
+    margin: auto;
+    margin-bottom: -8px;
+    margin-top: .5rem;
+}
+
+.card-features {
+    width:  260px;
+    border-radius:  10px;
+    padding:  25px;
+}
+
+ .card-icon {
+    background:  var(--lightcolor);
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    width:  55px;
+    height:  55px;
+    border-radius: 8px;
+    margin-bottom:  1rem;
+}
+
+.card-text h3 {
+    font-size:  25px;
+    font-weight: bold;
+}
+
+/*Landing Page*/
+#Landing_Page{
+    margin:  5rem 0;
+}
+#Landing_Page h2{
+    font-size: 46px;
+    font-weight: bold;
+    margin-top: 5rem;
+}
+#Landing_Page p{
+    font-size: 19px;
+    color: var(--gray)
+}
+#Landing_Page span{
+    color: var(--darkblue);
+}
+
+/*Meet Our Team*/
+#Team{
+    padding: 65px 0;
+    background:  var(--lightcolor);
+}
+#Team .card-team{
+    padding: 5px;
+}
+#Team .card-team .bottom-content{
+    padding-top:  17px;
+}
+#Team .card-team .about{
+    margin-top: 3.5rem;
+}
+#Team .card-team p{
+    color: var(--gray);
+    font-size: 17px;
+}
+#Team .card-team .line-team{
+    display: block;
+    border-bottom: 5px solid var(--darkblue);
+    width: 20%;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+    margin-top: .5rem;
+}
+
+#Team .col-lg-6{
+    background: #fff;
+    margin: 50px 25px;
+    padding: 20px;
+    color: #8e8b8b;  
+    position: relative;
+    border-radius: 12px;
+    width: 520px;
+}
+.col-lg-6 .team_img{
+    position: absolute;
+    top: -60px;
+    left: 20%;
+    transform: translateX(-50%);
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+}
+
+
+
+/* About Us  */
+#about_us {
+    padding:  55px 0;
+}
+#about_us .title {
+    font-size:  40px;
+    margin-bottom: 52px;
+}
+.card-about {
+    background:  var(--lightcolor);
+    padding:  50px;
+    border-radius:  10px;
+    margin:  0 4.5rem;
+}
+.card-about p span {
+    color:  var(--darkblue);
+}
+.card-about .modal-body a {
+    color:  var(--darkblue);
+}
+/* Modal */
+.modal .modal-content{
+    padding: 15px;
+    border-radius: 10px;
+    border: none;
+}
+.modal-header, .modal-footer{
+    border-bottom: none;
+    border-top: none;
+}
+
+/*Subscribe*/
+#Subscribe{
+    padding: 65px 0;
+    background-color: var(--lightcolor);
+}
+#Subscribe h2{
+    font-weight: bold;
+    font-size: 37px;
+}
+#Subscribe span{
+    color: var(--darkblue);
+}
+#Subscribe h5{
+    color: var(--gray);
+    font-weight: 400;
+}
+#Subscribe form {
+    display: flex;
+    justify-content: center;
+}
+#Subscribe form .input-subsribe{
+    width: 70%;
+    border-radius: 10px;
+
+}
+#Subscribe  form .input-subsribe input{
+    border: none;
+    padding: 15px 20px;
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
+}
+#Subscribe form .input-subsribe button{
+    border: none;
+    padding: 20px 35px;
+    border-radius: 12px;
+}
+
+input,
+input:focus,
+input:active
+{
+    outline: none;
+    box-shadow: none;
+}
+
+/* Contact Us */
+#contact {
+    padding:  70px 0;
+}
+#contact .line-contact::after {
+    content: '';
+    display: block;
+    border-bottom: 5px solid var(--darkblue);
+    width: 8%;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+    margin-top: .5rem;
+}
+
+#contact h4 {
+    margin-bottom: 0;
+}
+#contact .contact-spesific {
+    margin: 45px 0;
+}
+#contact .contact-spesific img {
+    margin-right:  20px;
+}
+#contact form {
+    background:  var(--lightcolor);
+    padding: 50px 40px;
+    border-radius: 10px;
+}
+#contact form .form-control {
+    padding: 15px 19px;
+    border-radius: 10px;
+    margin-bottom: 1rem; 
+    border:  none;
+}
+#contact form .form-control:focus, .form-control:active {
+    border:  2.5px solid var(--darkblue);
+    outline: none;
+    box-shadow: none;
+}
+#contact input{
+    padding: 15px 20px;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+
+}
+#contact .btn-load {
+    background: var(--hovernav);
+    border-radius: 4px;
+}
+#contact .top {
+    position: fixed;
+    text-decoration: none;
+    padding: 5px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    font-size: 20px;
+    bottom: 6rem;
+    z-index: 100;
+    right: 2.28rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--hovernav);
+    color:  #fff;
+}
+
+.scroll {
+    display: inline-block;
+}
+
+
+/*Footer*/
+footer{
+    background-color: var(--darkblue);
+    padding: 2.5rem 0;
+}
+.footer-content p{
+    margin-top: 16px;
+}
+.footer-content .sosial-media{
+    margin-top: 2rem;
+}
+.footer-content .sosial-media a{
+    background-color: #fff;
+    color: var(--darkblue);
+    padding: 13px 16.5px;
+    border-radius: 8px;
+    margin-right: 8px;
+}
+.footer-content .text-about a{
+    padding: 0.8rem 0 !important;
+}
+
+
+/* All Mobile version */
+@media (max-width:  600px) {
+    .jumbotron .circle {
+        position: absolute;
+        left:  0;
+        bottom:  40%;
+    }
+    .jumbotron .text {
+        margin-bottom:  11%;
+    }
+    .jumbotron .circle {
+        width:  80px;
+    }
+    .jumbotron .img-roket {
+        width:  310px;
+        text-align: center;
+    }
+    #Features {
+        margin: 17em 0;
+        padding: 70px 0;
+    }
+    .card-features {
+        margin-bottom: 1.5rem;   
+    }
+    #Team .col-lg-6{
+        max-width: 310px;
+    }
+    .row .col-lg-6 .team_img{
+        position: absolute;
+        top: -55px;
+        left: 25%;
+        transform: translateX(-50%);
+        width: 90px;
+        height: 90px;
+        border-radius: 50%;
+    }
+    #Team .card-team .bottom-content{
+        position: static;
+        top: 0;
+        transform: translateX(0);
+        left: 0;
+    }
+
+    .card-about {
+        padding:  30px;
+        margin:  0 1rem;
+    }
+    #contact form {
+        padding: 35px 25px;
+    }
+    #contact .contact-spesific img {
+        width:  25px;
+    }
+}
+
+/* Mobile Under 400 */
+@media (max-width:  360px) {
+    #Features {
+        margin: 26em 0;
+    }
+}
+
+/*  Mobile Under Iphone */
+@media (max-width:  320px) {
+    .jumbotron .img-roket {
+        width:  250px;
+    }
+    #Features {
+        margin: 30em 0 0;
+        padding: 70px 0;
+    }
+    #Team .col-lg-6{
+        max-width: 300px;
+    }
+}
+
+/* Tablet Version */
+@media (min-width:  600px) and (max-width: 992px) {    
+    #Features {
+        margin:  32em 0 0;
+    }
+    
+}
+/* phone */
+@media (max-width:  992px) {
+    .card-features {
+        margin-bottom: 1.5rem;   
+    }
+    #contact .top {
+        right: 1.39rem;
+    }
+}
+/* Mini Desktop version */
+@media (max-width: 1200px) {
+    #Team .card-team .bottom-content{
+        position: static;
+        top: 0;
+        transform: translateX(0);
+        left: 0;
+    }
+}

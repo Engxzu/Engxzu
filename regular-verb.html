@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>engXzu - Regular Verb</title>
+  <!-- bootstrap 5 css -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/css/bootstrap.min.css" integrity="sha384-DhY6onE6f3zzKbjUPRc2hOzGAdEf4/Dz+WJwBvEYL/lkkIsI3ihufq9hk9K4lVoK" crossorigin="anonymous">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link rel="shortcut icon" href="./assets/img/brand.png"/> 
+  <!-- custom css -->
+  <link rel="stylesheet" href="assets/css/main.css">
+</head>
+  
+  
+<style>
+    @keyframes hideLoader{0%{ width: 100%; height: 100%; }100%{ width: 0; height: 0; }  }  body > div.loader{ position: fixed; background: white; width: 100%; height: 100%; z-index: 1071; opacity: 0; transition: opacity .5s ease; overflow: hidden; pointer-events: none; display: flex; align-items: center; justify-content: center;}body:not(.loaded) > div.loader{ opacity: 1;}body:not(.loaded){ overflow: hidden;}  body.loaded > div.loader{animation: hideLoader .5s linear .5s forwards;  } /* Typing Animation */.loading-animation {width: 6px;height: 6px;border-radius: 50%;animation: typing 1s linear infinite alternate;position: relative;left: -12px;}@keyframes typing {0% {background-color: rgba(100,100,100, 1);box-shadow: 12px 0px 0px 0px rgba(100,100,100, 0.2),24px 0px 0px 0px rgba(100,100,100, 0.2);}25% {background-color: rgba(100,100,100, 0.4);box-shadow: 12px 0px 0px 0px rgba(100,100,100, 2),24px 0px 0px 0px rgba(100,100,100, 0.2);}75% {background-color: rgba(100,100,100, 0.4);box-shadow: 12px 0px 0px 0px rgba(100,100,100, 0.2),24px 0px 0px 0px rgba(100,100,100, 1);}}
+  </style>
+
+<body>
+  <div class="loader">
+    <div class="loading-animation"></div>
+  </div>
+
+  <nav class="navbar navbar-expand d-flex flex-column align-item-start" id="sidebar">
+      <li class="brand pl-3 w-100">
+            <a href="index.html" class="text-decoration-none d-flex align-items-center"><img src="assets/img/brand.png" class="img-fluid mr-2" width="40"alt="">engXzu</a>
+      </li>
+      <ul class="navbar-nav d-flex flex-column w-100">
+          <li class="nav-item w-100">
+            <a href="#" class="text-menu pl-3">More Docs</a>
+          </li>
+          <li class="nav-item w-100">
+            <a href="quiz.html" class="nav-link text-light">Fast Quiz</a>
+          </li>
+          <li class="nav-item w-100">
+            <a href="noun.html" class="nav-link text-light ">Noun</a>
+          </li>
+          <li class="nav-item w-100">
+            <a href="sentence.html" class="nav-link text-light">Sentence</a>
+          </li>
+          <li class="nav-item dropdown w-100">
+              <a href="#" class="nav-link text-light" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">Verb<span class="iconify" data-icon="bytesize:chevron-bottom" data-width="17" data-height="17"></span></a>
+              <ul class="dropdown-menu w-100" aria-labelledby="navbarDropdown">
+                  <li><a href="auxiliary-verb.html" class="dropdown-item text-light pl-3 p-2">&nbsp;Auxiliary Verb</a></li>
+                  <li><a href="transitive-verb.html" class="dropdown-item text-light pl-3 p-2">&nbsp;Transitive Verb</a></li>
+                  <li><a href="instransitive-verb.html" class="dropdown-item text-light pl-3 p-2">&nbsp;Instransitive Verb</a></li>
+                  <li><a href="regular-verb.html" class="dropdown-item text-light pl-3 p-2">&nbsp;Regular Verb</a></li>
+                  <li><a href="iregular-verb.html" class="dropdown-item text-light pl-3 p-2">&nbsp;Iregular Verb</a></li> 
+                  <li><a href="infinitive-verb.html" class="dropdown-item text-light pl-3 p-2">&nbsp;Infinitive Verb</a></li> 
+              </ul>
+          </li>
+          <li class="nav-item w-100">
+            <a href="tenses.html" class="text-menu pl-3 ">Tenses</a>
+          </li>
+          <li class="nav-item dropdown w-100">
+              <a href="#" class="nav-link text-light" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">Present<span class="iconify" data-icon="bytesize:chevron-bottom" data-width="17" data-height="17"></span></a>
+              <ul class="dropdown-menu w-100" aria-labelledby="navbarDropdown">
+                  <li><a href="1-present-tense.html" class="dropdown-item text-light pl-3 p-2">&nbsp;Simple Present  </a></li>
+                  <li><a href="2-present-continuous-tense.html" class="dropdown-item text-light pl-3 p-2">&nbsp;Present Continuous</a></li>
+                  <li><a href="3-present-perfect-tense.html" class="dropdown-item text-light pl-3 p-2">&nbsp;Present Perfect</a></li>
+                  <li><a href="4-present-perfect-continuous-tense.html" class="dropdown-item text-light pl-3 p-2">&nbsp;Present Perfect <br>&nbsp;Continuous</a></li>
+              </ul>
+          </li>
+          <li class="nav-item dropdown w-100">
+              <a href="#" class="nav-link text-light" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">Past<span class="iconify" data-icon="bytesize:chevron-bottom" data-width="17" data-height="17"></span></a>
+              <ul class="dropdown-menu w-100" aria-labelledby="navbarDropdown">
+                  <li><a href="5-past-tense.html" class="dropdown-item text-light pl-3 p-2">&nbsp;Simple Past  </a></li>
+                  <li><a href="6-past-continuous-tense.html" class="dropdown-item text-light pl-3 p-2">&nbsp;Past Continuous</a></li>
+                  <li><a href="7-past-perfect-tense.html" class="dropdown-item text-light pl-3 p-2">&nbsp;Past Perfect</a></li>
+                  <li><a href="8-past-perfect-continuous-tense.html" class="dropdown-item text-light pl-3 p-2">&nbsp;Past Perfect <br>&nbsp;Continuous</a></li>
+              </ul>
+          </li>
+          <li class="nav-item dropdown w-100">
+              <a href="#" class="nav-link text-light" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">Future<span class="iconify" data-icon="bytesize:chevron-bottom"data-width="17" data-height="17"></span></a>
+              <ul class="dropdown-menu w-100" aria-labelledby="navbarDropdown">
+                  <li><a href="9-future-tense.html" class="dropdown-item text-light pl-3 p-2">&nbsp;Simple Future</a></li>
+                  <li><a href="10-future-continuous-tense.html" class="dropdown-item text-light pl-3 p-2">&nbsp;Future Continuous</a></li>
+                  <li><a href="11-future-perfect-tense.html" class="dropdown-item text-light pl-3 p-2">&nbsp;Future Perfect</a></li>
+                  <li><a href="12-future-perfect-continuous-tense.html" class="dropdown-item text-light pl-3 p-2">&nbsp;Future Perfect <br>&nbsp;Continuous</a></li>
+              </ul>
+          </li>
+          <li class="nav-item dropdown w-100">
+              <a href="#" class="nav-link text-light" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">Past Future<span class="iconify" data-icon="bytesize:chevron-bottom"data-width="17" data-height="17"></span></a>
+              <ul class="dropdown-menu w-100" aria-labelledby="navbarDropdown">
+                  <li><a href="13-past-future-tense.html" class="dropdown-item text-light pl-3 p-2">&nbsp;Past Future</a></li>
+                  <li><a href="14-past-future-continuous-tense.html" class="dropdown-item text-light pl-3 p-2">&nbsp;Past Future Continuous</a></li>
+                  <li><a href="15-past-future-perfect-tense.html" class="dropdown-item text-light pl-3 p-2">&nbsp;Past Future Perfect</a></li>
+                  <li><a href="16-past-future-perfect-continuous-tense.html" class="dropdown-item text-light pl-3 p-2">&nbsp;Past Future Perfect <br>&nbsp;Continuous</a></li>
+              </ul>
+          </li>
+          <li class="nav-item w-100">
+            <a href="tenses.html" class="text-menu pl-3">Active & Passive Voice</a>
+          </li>
+          <li class="nav-item w-100">
+            <a href="activevoice.html" class="nav-link text-light">Active Voice</a>
+          </li> 
+      </ul>
+  </nav>
+
+  <!-- Content -->
+  <section class="my-container">
+    <div class="container">
+      <div class="row">
+        <div class="col-6">
+          <button class="btn my-4" id="menu-btn"><i class="fas fa-bars"></i></button>
+          <button class="btn my-4 close-btn d-none"><i class="fas fa-times"></i></button>
+        </div>
+        <div class="col-6">
+          <div class="button-group my-4 float">
+            <button title="Tosqa" class="btn btn-color btn-success"></button>
+            <button title="Blue" class="btn btn-color btn-blue"></button>
+            <button title="Dark" class="btn btn-color btn-dark"></button>  
+        </div>
+      </div>
+      <div class="row ">
+        <div class="col isi-content">
+          <h3>IV. Regular Verb</h3>
+          <hr>
+          <p class="arti-tense fs-2">Suatu bentuk dari kata kerja yang bentuk <a href="5-past-tense.html" class="text-decoration-none text-blue"><strong>Past Tense(VERB II)</strong></a> dan bentuk <a href="3-present-perfect-tense.html" class="text-decoration-none text-blue"><strong>Past Participle(VERB III)</strong></a> dibentuk dari kata kerja dasar (Infinitivwe) hanya menambahkan 'D/ED' saja..</p>
+        </div>
+        <div class="row contoh-kal">
+          <div class="row contoh-kalimat">
+            <div class="row">
+              <div class="col-12 mt-2">
+                <h5 class="rumus" style="color: var(--white)">A. Pada umumnya kata kerjanya hanya ditambah 'ED'</h5>
+                <table class="table">
+                  <thead>
+                    <tr>
+                      <th scope="col">Verb I</th>
+                      <td scope="col">Verb II</td>
+                      <td scope="col">Verb III</td>
+                      <td scope="col">Arti</td>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th scope="row">Abash</th>
+                      <td>Abashed</td>
+                      <td>Abashed</td>
+                      <td>Memalukan</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="col-12 mt-3">
+                <h5 class="rumus" style="color: var(--white)">B. Bila kata kerja yang berakhiran 'E' maka Verb II dan Verb III hanya menambahkan 'D' saja.</h5>
+                <table class="table">
+                <thead>
+                  <tr>
+                    <th scope="col">Verb I</th>
+                    <th scope="col">Verb II</th>
+                    <th scope="col">Verb III</th>
+                    <th scope="col">Arti</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">cycle</th>
+                    <td>cycled</td>
+                    <td>cycled</td>
+                    <td>bersepeda</td>
+                  </tr>
+                </tbody>
+              </table>
+              </div>
+            <div class="col-12 mt-2">
+                <h5 class="rumus" style="color: var(--white)">C. Bila kata kerja yang berakhiran 'Y' dan didahului dengan huruf mati (Cosonant) maka Verb II dan Verb III, akhiran 'Y' dirubah menjadi 'I' dan kemudia dengan 'ED'saja.</h5>
+                <table class="table">
+                <thead>
+                  <tr>
+                    <th scope="col">Verb I</th>
+                    <th scope="col">Verb II</th>
+                    <th scope="col">Verb III</th>
+                    <th scope="col">Arti</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">dry</th>
+                    <td>dried</td>
+                    <td>dried</td>
+                    <td>mengeringkan</td>
+                  </tr>
+                </tbody>
+                </table>
+              </div>
+              <div class="col">
+                <p class="text-danger" style="font-size: 22px;"><i class="fas fa-exclamation-circle mr-2 pt-1" style="font-size: 25px;"></i></i>Maaf kami tidak bisa memlanjutkan materi ini !</p> 
+              </div>
+              <div class="float justify-content-end d-flex">
+                <h4 class="arti-tense fw-bold mt-4 d-flex justify-content-center pb-4 mr-3">Would you like to see more verbs?</h4>
+                <button class="btn close-btn mb-3 px-4"><a class="text-decoration-none text-white" href="#">Click Me</a></button>
+              </div>  
+            </div>      
+          </div>
+        </div>
+
+      </div>
+    </div>  
+  </section>
+
+
+ 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://code.iconify.design/2/2.0.4/iconify.min.js"></script>
+  <script src="assets/js/main.js"></script>
+  <!-- bootstrap js -->
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/js/bootstrap.min.js" integrity="sha384-5h4UG+6GOuV9qXh6HqOLwZMY4mnLPraeTrjT5v07o347pj6IkfuoASuGBhfDsp3d" crossorigin="anonymous"></script>
+</body>
+
+</html>

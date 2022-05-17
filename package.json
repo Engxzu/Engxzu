@@ -1,0 +1,18 @@
+{
+  "name": "engxzu",
+  "version": "1.0.0",
+  "description": "Engxzu is an online learning application that provides a place to learn English, which will help students for solving problems in learning English.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Engxzu"
+  },
+  "keywords": [
+    "Engxzu"
+  ],
+  "author": "Elvira & Elvina",
+  "license": "ISC"
+}

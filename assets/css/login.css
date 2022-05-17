@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Mono:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Viga&display=swap');
+
+*, 
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+:root {
+    --darkblue: #018068;
+    --main-color: #018068;
+    --pastelblue: #F2F7FF;
+    --lilac: #f3f0ff;
+    --hovernav: #00b594;
+    --aqua: #3debb7;
+    --white: #4f6964;
+    --rumus: #ffffff;
+    /*#87E8D6*/
+
+}
+
+.teal {
+    color:  var(--darkblue);
+}
+
+.profile_pages { 
+    background: linear-gradient(-300deg, #11027d, #36f7ad, #018068, #edfaf7);
+    animation: gradient 15s ease infinite;
+    background-size: 400% 400%;
+}
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+.dropdown-menu, .dropmenu-item{
+    border: none;
+    background: var(--darkblue);
+    padding: 0.8rem;
+    border-radius: 8px;
+    font-size: 16px;
+}
+.dropmenu-item{
+    padding: 1rem 2rem;
+}
+.dropdown-item:hover{
+    background-color: var(--hovernav);
+    border-radius: 5px !important;
+    border: none !important;
+}
+.abcRioButtonContentWrapper {
+    border: none !important;
+    background: var(--darkblue) !important;
+    color: #fff !important;
+}
+
+.img-profile {
+    width: 140px;
+}
+
+.box-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background:  rgba(255,255,255, 0.17);
+    backdrop-filter: blur(2rem);
+    margin:  0 20%;
+    padding:  5% 0;
+    border-top:  1px solid #fff;
+    border-left: 1px solid #fff;
+    border-radius:  15px;
+    margin-bottom: 2rem;
+}
+.box-info h4 {
+    margin:  0;
+}
+
+.box-info .user-text {
+    color:  white;
+}
+.box-info .user-text i{
+    color:  #008b29;
+}
+.card-bg{
+    background: white;
+    border-radius: 5px;
+    padding:  10px 20px;
+    word-break: break-word;
+}  
+
+@media (max-width:  600px) {
+    .box-info {
+        margin:  0 5%;
+        padding:  20% 0;
+    }
+    .card-bg {
+        margin:  0 10px;
+        padding:  5px 15px;
+    }
+}
